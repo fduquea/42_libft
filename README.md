@@ -1,9 +1,14 @@
 # 📚 Libft [![fduque-a's 42 Libft Score](https://badge42.vercel.app/api/v2/cli4i2e8c001108jt19bvwefz/project/3063782)](https://github.com/JaeSeoKim/badge42)
 
+## Disclaimer: This is the current libft I use, with a lot of bonus functions (functions not mandatory by the project's subject). The bonus functions are marqued with "*" both in this README and in the libft.h file with a comment.
+## Also, the subject requires you to add a bonus rule to compile the bonus function, but after being evaluated I deleted my bonus rule and added the bonus source files to the mandatory ones, which is wrong, DO NOT COPY PASTE IT.
+## Use it at your own risk.
 
 ## Description
 
 This project consists of coding basic C functions (see below), which are then compiled into a library for use in other projects of the cursus.
+
+## Functions
 
 ### Functions from `<ctype.h>` library
 
@@ -26,8 +31,9 @@ This project consists of coding basic C functions (see below), which are then co
 ### Functions from `<stdlib.h>` library
 
 * [`ft_atoi`](libft/srcs/to/ft_atoi.c)		- convert ASCII string to integer.
-* [`ft_atof`](libft/srcs/to/ft_atof.c) *		- convert ASCII string to integer.
+* [`ft_atof`](libft/srcs/to/ft_atof.c) *		- convert ASCII string to double.
 * [`ft_calloc`](libft/srcs/mem/ft_calloc.c)	- memory allocation.
+* [`ft_atol`](libft/srcs/to/ft_atof.c) *		- convert ASCII string to long.
 
 ### Functions from `<strings.h>` library
 
@@ -42,7 +48,7 @@ This project consists of coding basic C functions (see below), which are then co
 ### Functions from `<string.h>` library
 
 * [`ft_strlen`](libft/srcs/str/ft_strlen.c)				- find length of string.
-* [`ft_strlen_2`](libft/srcs/str/ft_strlen_2.c) *				- find length of 2D array (i.e. splitted string).
+* [`ft_strlen_2d`](libft/srcs/str/ft_strlen_2.c) *				- find length of 2D array (i.e. splitted string).
 * [`ft_strchr`](libft/srcs/str/ft_strchr.c)				- locate character in string (first occurrence).
 * [`ft_strrchr`](libft/srcs/str/ft_strrchr.c)			- locate character in string (last occurence).
 * [`ft_strstr`](libft/srcs/str/ft_strstr.c) *		- locate a substring in a string.
@@ -96,7 +102,43 @@ This project consists of coding basic C functions (see below), which are then co
 * [`ft_lstiter`](libft/srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
 * [`ft_lstmap`](libft/srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
 
-_Note: functions marked with * are bonus functions (not mandatory by the project's subject)._
+## Makefile explained
+
+_Coming soon..._
+
+## 🛠️ Usage
+
+### Requirements
+
+The library is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
+
+### Instructions
+
+**1. Compiling the library**
+
+To compile the library, run:
+
+```shell
+$ cd path/to/libft && make
+```
+
+**2. Using it in your code**
+
+To use the library functions in your code, simply include its header:
+
+```C
+#include "libft.h"
+```
+
+and, when compiling your code, add the required flags:
+
+```shell
+-lft -L path/to/libft.a -I path/to/libft.h
+```
+
+## Third-party testers
+
+* [xicodomingues/francinette](https://github.com/xicodomingues/francinette)
 
 # Found any issue? Contact me! 📥
 
