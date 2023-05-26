@@ -88,7 +88,6 @@ This project consists of coding basic C functions (see below), which are then co
 * [`ft_split`](libft/srcs/str/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
 * [`ft_split_free`](libft/srcs/str/ft_split_free.c) *				- free splitted string.
 * [`ft_strmapi`](libft/srcs/str/ft_strmapi.c)			- create new string from modifying string with specified function.
-* [`ft_ftoa_rnd`](libft/srcs/str/ft_ftoa_rnd.c)			- convert float to ASCII string.
 
 ### Linked list functions
 
@@ -136,7 +135,7 @@ and, when compiling your code, add the required flags:
 -lft -L path/to/libft.a -I path/to/libft.h
 ```
 
-## Third-party testers
+## Third-party tester
 
 * [xicodomingues/francinette](https://github.com/xicodomingues/francinette)
 
