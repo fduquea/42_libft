@@ -2,8 +2,6 @@
 
 ## Disclaimer: This is the current libft I use, with a lot of bonus functions (functions not mandatory by the project's subject). The bonus functions are marqued with "*" both in this README and in the libft.h file with a comment. Also, the subject requires you to add a bonus rule to compile the bonus function, but after being evaluated I deleted my bonus rule and added the bonus source files to the mandatory ones, which is wrong, DO NOT COPY PASTE IT. Use it at your own risk.
 
-### _____________________________________________________________________________________________
-
 ## Description
 
 This project consists of coding basic C functions (see below), which are then compiled into a library for use in other projects of the cursus.
