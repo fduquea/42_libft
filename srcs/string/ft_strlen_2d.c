@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen_2d.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/05/29 11:28:57 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:48:09 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: N/A
+** SYNOPSIS: find length of two dimensional array
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The strlen_2() function computes the length of the two dimensional
+**		array s.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+size_t	ft_strlen_2(char **s)
 {
-	write(1, &c, 1);
+	size_t	l;
+
+	l = 0;
+	while (s[l] != 0)
+		l++;
+	return (l);
 }

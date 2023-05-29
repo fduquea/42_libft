@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/12 12:20:11 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 10:46:51 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <ctype.h>
+** SYNOPSIS: printing character test (space character inclusive)
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The isprint() function tests for any printing character, including space
+**	(` ').
 */
 
-#include "libft.h"
-
-void	ft_putchar(char c)
+int	ft_isprint(int c)
 {
-	write(1, &c, 1);
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

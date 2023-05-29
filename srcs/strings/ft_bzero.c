@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/12 14:21:26 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:25:59 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <strings.h>
+** SYNOPSIS: write zeroes to a byte string
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The bzero() function writes n zeroed bytes to the string s. If n is
+**	zero, bzero() does nothing.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_bzero(void *s, size_t n)
 {
-	write(1, &c, 1);
+	size_t		i;
+	char		*p;
+
+	i = 0;
+	p = s;
+	while (i < n)
+	{
+		p[i] = '\0';
+		i++;
+	}
 }

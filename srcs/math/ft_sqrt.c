@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/05/29 11:28:21 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 12:03:36 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <math.h>
+** SYNOPSIS: square root function
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The sqrt() function compute the non-negative square root of x.
 */
 
-#include "libft.h"
-
-void	ft_putchar(char c)
+double	ft_sqrt(double x)
 {
-	write(1, &c, 1);
+	double	n;
+
+	n = 1;
+	if (x > 0)
+	{
+		while (n * n <= x)
+		{
+			if (n * n == x)
+				return (n);
+			n++;
+		}
+	}
+	return (0);
 }

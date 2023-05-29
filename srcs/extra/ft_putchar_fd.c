@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/20 17:38:41 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 12:22:28 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** SYNOPSIS: output a character to given file
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The fputc() function writes the character c (converted to an ``unsigned
+**	char'') to the output stream pointed to by stream.
+** 		[42 PDF] Outputs the character ’c’ to the given file descriptor.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_putchar_fd(char c, int fd)
 {
-	write(1, &c, 1);
+	write(fd, &c, 1);
 }

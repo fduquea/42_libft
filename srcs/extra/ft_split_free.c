@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_split_free.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/05/29 12:30:00 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 12:31:55 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: N/A
+** SYNOPSIS: free ft_split() return pointer
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The ft_split_free() function frees the memory space pointed to by s,
+**		which must have been returned by a previous call to malloc() by the
+**		ft_split() function.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_split_free(char **s)
 {
-	write(1, &c, 1);
+	size_t	i;
+
+	if (!s || !*s)
+		return ;
+	i = 0;
+	while (i < ft_strlen_2d(s))
+		free(s[i++]);
+	free(s);
+	*s = NULL;
 }

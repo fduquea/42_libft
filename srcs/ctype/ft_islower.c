@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/05/29 10:42:12 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:51:09 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
-**
-** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
-*/
-
 #include "libft.h"
 
-void	ft_putchar(char c)
+/*
+** LIBRARY: <ctype.h>
+** SYNOPSIS: lower-case character test
+**
+** DESCRIPTION:
+** 		 The islower() function tests for any lower-case letters.
+*/
+
+int	ft_islower(int c)
 {
-	write(1, &c, 1);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }

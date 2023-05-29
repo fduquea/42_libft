@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/12 15:08:59 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:26:46 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <string.h>
+** SYNOPSIS: copy byte string
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The memmove() function copies n bytes from string s2 to string s1.  The
+**	two strings may overlap; the copy is always done in a non-destructive
+**	manner.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	write(1, &c, 1);
+	if (src < dest)
+	{
+		while (n--)
+		{
+			((char *)dest)[n] = ((char *)src)[n];
+		}
+	}
+	else
+		ft_memcpy(dest, src, n);
+	return (dest);
 }

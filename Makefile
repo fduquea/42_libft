@@ -6,7 +6,7 @@
 #    By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 17:49:20 by fduque-a          #+#    #+#              #
-#    Updated: 2023/05/26 16:48:23 by fduque-a         ###   ########.fr        #
+#    Updated: 2023/05/29 10:37:58 by fduque-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,10 @@ RM = rm -f
 HDR = -I include
 SRC_DIR = srcs
 OBJ_DIR = objs
-SRC_SUBDIR = libft printf gnl extra
+SUBDIRS = ctype extra lst math stdlib string strings printf gnl
 
-SRCS_DIRS	= $(foreach dir, $(SRC_SUBDIR), $(addprefix $(SRC_DIR)/, $(dir)))
-OBJS_DIRS	= $(foreach dir, $(SRC_SUBDIR), $(addprefix $(OBJ_DIR)/, $(dir)))
+SRCS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(SRC_DIR)/, $(dir)))
+OBJS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(OBJ_DIR)/, $(dir)))
 SRCS	= $(foreach dir, $(SRCS_DIRS), $(wildcard $(dir)/*.c))
 OBJS	= $(subst $(SRC_DIR), $(OBJ_DIR), $(SRCS:.c=.o))
 
@@ -41,7 +41,7 @@ $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 	@ echo "$(GREEN)Compiled $< with sucess$(DEF_COLOR)"
 
 $(NAME) : ${OBJS}
-	@ ar rcs ${NAME} $(OBJ_FILES)
+	@ ar rcs ${NAME} $(OBJS)
 	@ echo "$(GRAY)*----------------------------------*$(DEF_COLOR)"
 	@ echo "$(GRAY)| $(BLUE)! Compiled libft.a with sucess ! $(GRAY)|$(DEF_COLOR)"
 	@ echo "$(GRAY)*----------------------------------*$(DEF_COLOR)"

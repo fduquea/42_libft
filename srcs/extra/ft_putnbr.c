@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/05/29 12:26:07 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 12:26:30 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: N/A
+** SYNOPSIS: output integer to stdout
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		Outputs the integer ’n’ to stdout.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_putnbr(int n)
 {
-	write(1, &c, 1);
+	if (n < 0)
+	{
+		ft_putchar('-');
+		if (n == -2147483648)
+		{
+			ft_putchar('2');
+			n = -147483648;
+		}
+		n *= -1;
+	}
+	if (n / 10)
+		ft_putnbr(n / 10);
+	ft_putchar(n % 10 + '0');
 }

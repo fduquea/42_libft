@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/12 12:43:58 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:26:14 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <string.h>
+** SYNOPSIS: write a byte to a byte string
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The memset() function writes n bytes of value c (converted to an
+**	unsigned char) to the string s.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	*ft_memset(void *str, int c, size_t n)
 {
-	write(1, &c, 1);
+	size_t			i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)str)[i] = (unsigned char)c;
+		i++;
+	}
+	return (str);
 }

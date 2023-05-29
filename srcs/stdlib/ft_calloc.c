@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fduque-a <fduque-a@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 11:15:55 by fduque-a          #+#    #+#             */
-/*   Updated: 2023/05/29 12:15:37 by fduque-a         ###   ########.fr       */
+/*   Created: 2023/04/13 15:02:58 by fduque-a          #+#    #+#             */
+/*   Updated: 2023/05/29 11:45:24 by fduque-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <stdio.h>
-** SYNOPSIS: output a character to stdout
+** LIBRARY: <stdlib.h>
+** SYNOPSIS: memory allocation
 **
 ** DESCRIPTION:
-** 		The putchar() function writes the character c (converted to an
-**	``unsigned char'') to the output stream of stdout.
-** 		[42 PDF] Outputs the character ’c’ to stdout.
+** 		The calloc() function contiguously allocates enough space for count
+**	objects that are size bytes of memory each and returns a pointer to the
+**	allocated memory. The allocated memory is filled with bytes of value
+**	zero.
 */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	write(1, &c, 1);
+	void	*ret;
+
+	ret = malloc(nmemb * size);
+	if (ret == NULL)
+		return (ret);
+	ft_bzero(ret, nmemb * size);
+	return (ret);
 }
