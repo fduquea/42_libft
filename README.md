@@ -2,7 +2,7 @@
 
 ## Disclaimer: This is the current libft I use, with a lot of bonus functions (functions not mandatory by the project's subject). The bonus functions are marqued with "*" both in this README and in the libft.h file with a comment. Also, the subject requires you to add a bonus rule to compile the bonus function, but after being evaluated I deleted my bonus rule and added the bonus source files to the mandatory ones, which is wrong, DO NOT COPY PASTE IT. Use it at your own risk.
 
-###____________________________________________________________________________________________________________________________________________
+### _____________________________________________________________________________________________
 
 ## Description
 
@@ -131,7 +131,7 @@ re : fclean all
 	
 .PHONY : all clean fclean re bonus
 ```
-# What does every line do?
+### What does every line do?
 
 **`NAME = libft.a`** : Defines a variable NAME with the value "libft.a". This variable represents the name of the output library file.
 CFLAGS = -Wall -Werror -Wextra: Defines a variable CFLAGS with compiler flags to enable additional warnings and treat warnings as errors.
@@ -172,7 +172,7 @@ CFLAGS = -Wall -Werror -Wextra: Defines a variable CFLAGS with compiler flags to
 
 **`.PHONY : all clean fclean re bonus`** : Declares the targets all, clean, fclean, re, and bonus as phony targets. This tells Makefile that these targets do not correspond to actual files or directories.
 
-# Please note that in this version of the makefile, both the header **`libft.h`** file and all source **`*.c`** files need to be in the same directory as the **Makefile**.
+### Please note that in this version of the makefile, both the header **`libft.h`** file and all source **`*.c`** files need to be in the same directory as the **Makefile**.
 
 ## 🛠️ Usage
 
