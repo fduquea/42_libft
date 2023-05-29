@@ -97,7 +97,7 @@ This project consists of coding basic C functions (see below), which are then co
 * [`<ft_lstdelone>`](42_libft/srcs/lst/ft_lstdelone.c)		- delete element from list.
 * [`<ft_lstclear>`](42_libft/srcs/lst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
 * [`<ft_lstiter>`](42_libft/srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
-* [`<ft_lstmap>`](42_libft/srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
+* [`<ft_lstmap>`](./srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
 
 ## Makefile explained
 
