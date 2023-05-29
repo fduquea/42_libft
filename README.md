@@ -89,15 +89,15 @@ This project consists of coding basic C functions (see below), which are then co
 
 ### Linked list functions
 
-* [`<ft_lstnew>`](libft/srcs/lst/ft_lstnew.c)				- create new list.
-* [`<ft_lstsize>`](libft/srcs/lst/ft_lstsize.c)			- count elements of a list.
-* [`<ft_lstlast>`](libft/srcs/lst/ft_lstlast.c)			- find last element of list.
-* [`<ft_lstadd_back>`](libft/srcs/lst/ft_lstadd_back.c)	- add new element at end of list.
-* [`<ft_lstadd_front>`](libft/srcs/lst/ft_lstadd_front.c)	- add new element at beginning of list.
-* [`<ft_lstdelone>`](libft/srcs/lst/ft_lstdelone.c)		- delete element from list.
-* [`<ft_lstclear>`](libft/srcs/lst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
-* [`<ft_lstiter>`](libft/srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
-* [`<ft_lstmap>`](libft/srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
+* [`<ft_lstnew>`](42_libft/srcs/lst/ft_lstnew.c)				- create new list.
+* [`<ft_lstsize>`](42_libft/srcs/lst/ft_lstsize.c)			- count elements of a list.
+* [`<ft_lstlast>`](42_libft/srcs/lst/ft_lstlast.c)			- find last element of list.
+* [`<ft_lstadd_back>`](42_libft/srcs/lst/ft_lstadd_back.c)	- add new element at end of list.
+* [`<ft_lstadd_front>`](42_libft/srcs/lst/ft_lstadd_front.c)	- add new element at beginning of list.
+* [`<ft_lstdelone>`](42_libft/srcs/lst/ft_lstdelone.c)		- delete element from list.
+* [`<ft_lstclear>`](42_libft/srcs/lst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
+* [`<ft_lstiter>`](42_libft/srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
+* [`<ft_lstmap>`](42_libft/srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
 
 ## Makefile explained
 
