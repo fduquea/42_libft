@@ -170,7 +170,9 @@ CFLAGS = -Wall -Werror -Wextra: Defines a variable CFLAGS with compiler flags to
 
 **`.PHONY : all clean fclean re bonus`** : Declares the targets all, clean, fclean, re, and bonus as phony targets. This tells Makefile that these targets do not correspond to actual files or directories.
 
-### Please note that in this version of the makefile, both the header **`libft.h`** file and all source **`*.c`** files need to be in the same directory as the **Makefile**.
+Want to know how to make my Makefile? Google it :P
+
+### Please note that in this version of the makefile, both the header **`libft.h`** file and all source **`*.c`** files need to be in the same directory as the **Makefile**. 
 
 ## 🛠️ Usage
 
