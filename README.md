@@ -10,94 +10,94 @@ This project consists of coding basic C functions (see below), which are then co
 
 ### Functions from `<ctype.h>` library
 
-* [`<ft_isascii>`](./srcs/ctype/ft_isascii.c)			- test for ASCII character.
-* [`<ft_isalnum>`](./srcs/ctype/ft_isalnum.c)			- alphanumeric character test.
-* [`<ft_isalpha>`](./srcs/ctype/ft_isalpha.c)			- alphabetic character test.
-* [`<ft_islower>`](./srcs/ctype/ft_islower.c) *	- lower-case character test.
-* [`<ft_isupper>`](./srcs/ctype/ft_isupper.c) *	- upper-case character test.
-* [`<ft_isdigit>`](./srcs/ctype/ft_isdigit.c)			- decimal-digit character test.
-* [`<ft_isxdigit>`](./srcs/ctype/ft_isxdigit.c) *	- hexadecimal-digit character test.
-* [`<ft_isprint>`](./srcs/ctype/ft_isprint.c)			- printing character test (space character inclusive).
-* [`<ft_isgraph>`](./srcs/ctype/ft_isgraph.c) *	- printing character test (space character exclusive).
-* [`<ft_isspace>`](./srcs/ctype/ft_isspace.c) *	- white-space character test.
-* [`<ft_isblank>`](./srcs/ctype/ft_isblank.c) *	- space or tab character test.
-* [`<ft_ispunct>`](./srcs/ctype/ft_ispunct.c) *	- punctuation character test.
-* [`<ft_iscntrl>`](./srcs/ctype/ft_iscntrl.c) *	- control character test.
-* [`<ft_tolower>`](./srcs/ctype/ft_tolower.c)			- upper case to lower case letter conversion.
-* [`<ft_toupper>`](./srcs/ctype/ft_toupper.c)			- lower case to upper case letter conversion.
+* [`<ft_isascii>`](./libft_curr/srcsctype/ft_isascii.c)			- test for ASCII character.
+* [`<ft_isalnum>`](./libft_curr/srcsctype/ft_isalnum.c)			- alphanumeric character test.
+* [`<ft_isalpha>`](./libft_curr/srcsctype/ft_isalpha.c)			- alphabetic character test.
+* [`<ft_islower>`](./libft_curr/srcsctype/ft_islower.c) *	- lower-case character test.
+* [`<ft_isupper>`](./libft_curr/srcsctype/ft_isupper.c) *	- upper-case character test.
+* [`<ft_isdigit>`](./libft_curr/srcsctype/ft_isdigit.c)			- decimal-digit character test.
+* [`<ft_isxdigit>`](./libft_curr/srcsctype/ft_isxdigit.c) *	- hexadecimal-digit character test.
+* [`<ft_isprint>`](./libft_curr/srcsctype/ft_isprint.c)			- printing character test (space character inclusive).
+* [`<ft_isgraph>`](./libft_curr/srcsctype/ft_isgraph.c) *	- printing character test (space character exclusive).
+* [`<ft_isspace>`](./libft_curr/srcsctype/ft_isspace.c) *	- white-space character test.
+* [`<ft_isblank>`](./libft_curr/srcsctype/ft_isblank.c) *	- space or tab character test.
+* [`<ft_ispunct>`](./libft_curr/srcsctype/ft_ispunct.c) *	- punctuation character test.
+* [`<ft_iscntrl>`](./libft_curr/srcsctype/ft_iscntrl.c) *	- control character test.
+* [`<ft_tolower>`](./libft_curr/srcsctype/ft_tolower.c)			- upper case to lower case letter conversion.
+* [`<ft_toupper>`](./libft_curr/srcsctype/ft_toupper.c)			- lower case to upper case letter conversion.
 
 ### Functions from `<stdlib.h>` library
 
-* [`<ft_atoi>`](./srcs/stdlib/ft_atoi.c)		- convert ASCII string to integer.
-* [`<ft_atof>`](./srcs/stdlib/ft_atof.c) *		- convert ASCII string to double.
-* [`<ft_calloc>`](./srcs/stdlib/ft_calloc.c)	- memory allocation + bzero.
-* [`<ft_atol>`](./srcs/stdlib/ft_atof.c) *		- convert ASCII string to long.
+* [`<ft_atoi>`](./libft_curr/srcsstdlib/ft_atoi.c)		- convert ASCII string to integer.
+* [`<ft_atof>`](./libft_curr/srcsstdlib/ft_atof.c) *		- convert ASCII string to double.
+* [`<ft_calloc>`](./libft_curr/srcsstdlib/ft_calloc.c)	- memory allocation + bzero.
+* [`<ft_atol>`](./libft_curr/srcsstdlib/ft_atof.c) *		- convert ASCII string to long.
 
 ### Functions from `<strings.h>` library
 
-* [`<ft_bzero>`](./srcs/strings/ft_bzero.c)		- write zeroes to a byte string.
-* [`<ft_memset>`](./srcs/strings/ft_memset.c)		- write a byte to a byte string.
-* [`<ft_memchr>`](./srcs/strings/ft_memchr.c)		- locate byte in byte string.
-* [`<ft_memcmp>`](./srcs/strings/ft_memcmp.c)		- compare byte string.
-* [`<ft_memmove>`](./srcs/strings/ft_memmove.c)	- copy byte string.
-* [`<ft_memcpy>`](./srcs/strings/ft_memcpy.c)		- copy memory area.
-* [`<ft_memccpy>`](./srcs/strings/ft_memccpy.c)	* - copy string until character found.
+* [`<ft_bzero>`](./libft_curr/srcsstrings/ft_bzero.c)		- write zeroes to a byte string.
+* [`<ft_memset>`](./libft_curr/srcsstrings/ft_memset.c)		- write a byte to a byte string.
+* [`<ft_memchr>`](./libft_curr/srcsstrings/ft_memchr.c)		- locate byte in byte string.
+* [`<ft_memcmp>`](./libft_curr/srcsstrings/ft_memcmp.c)		- compare byte string.
+* [`<ft_memmove>`](./libft_curr/srcsstrings/ft_memmove.c)	- copy byte string.
+* [`<ft_memcpy>`](./libft_curr/srcsstrings/ft_memcpy.c)		- copy memory area.
+* [`<ft_memccpy>`](./libft_curr/srcsstrings/ft_memccpy.c)	* - copy string until character found.
 
 ### Functions from `<string.h>` library
 
-* [`<ft_strlen>`](./srcs/string/ft_strlen.c)				- find length of string.
-* [`<ft_strlen_2d>`](./srcs/string/ft_strlen_2.c) *				- find length of 2D array (i.e. splitted string).
-* [`<ft_strchr>`](./srcs/string/ft_strchr.c)				- locate character in string (first occurrence).
-* [`<ft_strrchr>`](./srcs/string/ft_strrchr.c)			- locate character in string (last occurence).
-* [`<ft_strstr>`](./srcs/string/ft_strstr.c) *		- locate a substring in a string.
-* [`<ft_strnstr>`](./srcs/string/ft_strnstr.c)			- locate a substring in a string (size-bounded).
-* [`<ft_strcmp>`](./srcs/string/ft_strcmp.c) *		- compare strings.
-* [`<ft_strncmp>`](./srcs/string/ft_strncmp.c) 			- compare strings (size-bounded).
-* [`<ft_strnrcmp>`](./srcs/string/ft_strnrcmp.c) *			- reversely compare strings (size-bounded).
-* [`<ft_strcpy>`](./srcs/string/ft_strcpy.c) *		- copy strings.
-* [`<ft_strncpy>`](./srcs/string/ft_strncpy.c) *	- copy strings (size-bounded).
-* [`<ft_strdup>`](./srcs/string/ft_strdup.c)				- save a copy of a string (with malloc).
-* [`<ft_strndup>`](./srcs/string/ft_strndup.c) *	- save a copy of a string (with malloc, size-bounded).
-* [`<ft_strcat>`](./srcs/string/ft_strcat.c) *		- concatenate strings (s2 into s1).
-* [`<ft_strncat>`](./srcs/string/ft_strncat.c) *	- concatenate strings (s2 into s1, size-bounded).
-* [`<ft_strlcpy>`](./srcs/string/ft_strlcpy.c)			- size-bounded string copying.
-* [`<ft_strlcat>`](./srcs/string/ft_strlcat.c)			- size-bounded string concatenation.
+* [`<ft_strlen>`](./libft_curr/srcsstring/ft_strlen.c)				- find length of string.
+* [`<ft_strlen_2d>`](./libft_curr/srcsstring/ft_strlen_2.c) *				- find length of 2D array (i.e. splitted string).
+* [`<ft_strchr>`](./libft_curr/srcsstring/ft_strchr.c)				- locate character in string (first occurrence).
+* [`<ft_strrchr>`](./libft_curr/srcsstring/ft_strrchr.c)			- locate character in string (last occurence).
+* [`<ft_strstr>`](./libft_curr/srcsstring/ft_strstr.c) *		- locate a substring in a string.
+* [`<ft_strnstr>`](./libft_curr/srcsstring/ft_strnstr.c)			- locate a substring in a string (size-bounded).
+* [`<ft_strcmp>`](./libft_curr/srcsstring/ft_strcmp.c) *		- compare strings.
+* [`<ft_strncmp>`](./libft_curr/srcsstring/ft_strncmp.c) 			- compare strings (size-bounded).
+* [`<ft_strnrcmp>`](./libft_curr/srcsstring/ft_strnrcmp.c) *			- reversely compare strings (size-bounded).
+* [`<ft_strcpy>`](./libft_curr/srcsstring/ft_strcpy.c) *		- copy strings.
+* [`<ft_strncpy>`](./libft_curr/srcsstring/ft_strncpy.c) *	- copy strings (size-bounded).
+* [`<ft_strdup>`](./libft_curr/srcsstring/ft_strdup.c)				- save a copy of a string (with malloc).
+* [`<ft_strndup>`](./libft_curr/srcsstring/ft_strndup.c) *	- save a copy of a string (with malloc, size-bounded).
+* [`<ft_strcat>`](./libft_curr/srcsstring/ft_strcat.c) *		- concatenate strings (s2 into s1).
+* [`<ft_strncat>`](./libft_curr/srcsstring/ft_strncat.c) *	- concatenate strings (s2 into s1, size-bounded).
+* [`<ft_strlcpy>`](./libft_curr/srcsstring/ft_strlcpy.c)			- size-bounded string copying.
+* [`<ft_strlcat>`](./libft_curr/srcsstring/ft_strlcat.c)			- size-bounded string concatenation.
 
 ### Functions from `<math.h>` library
 
-* [`<ft_sqrt>`](./srcs/math/ft_sqrt.c) *	- square root function.
-* [`<ft_pow>`](./srcs/math/ft_pow.c) *	- power function.
+* [`<ft_sqrt>`](./libft_curr/srcsmath/ft_sqrt.c) *	- square root function.
+* [`<ft_pow>`](./libft_curr/srcsmath/ft_pow.c) *	- power function.
 
 ### Non-standard functions
 
-* [`<ft_swap>`](./srcs/extra/ft_swap.c) *			- swap value of two integers.
-* [`<ft_putchar>`](./srcs/extra/ft_putchar.c) *	- output a character to stdout.
-* [`<ft_putchar_fd>`](./srcs/extra/ft_putchar_fd.c)		- output a character to given file.
-* [`<ft_putstr>`](./srcs/extra/ft_putstr.c) *		- output string to stdout.
-* [`<ft_putstr_fd>`](./srcs/extra/ft_putstr_fd.c)		- output string to given file.
-* [`<ft_putendl>`](./srcs/extra/ft_putendl.c) *	- output string to stdout with newline.
-* [`<ft_putendl_fd>`](./srcs/extra/ft_putendl_fd.c)		- output string to given file with newline.
-* [`<ft_putnbr>`](./srcs/extra/ft_putnbr.c) *		- output integer to stdout.
-* [`<ft_putnbr_fd>`](./srcs/extra/ft_putnbr_fd.c)		- output integer to given file.
-* [`<ft_itoa>`](./srcs/extra/ft_itoa.c)					- convert integer to ASCII string.
-* [`<ft_substr>`](./srcs/extra/ft_substr.c)				- extract substring from string.
-* [`<ft_strtrim>`](./srcs/extra/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
-* [`<ft_strjoin>`](./srcs/extra/ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
-* [`<ft_split>`](./srcs/extra/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
-* [`<ft_split_free>`](./srcs/extra/ft_split_free.c) *				- free splitted string.
-* [`<ft_strmapi>`](./srcs/extra/ft_strmapi.c)			- create new string from modifying string with specified function.
+* [`<ft_swap>`](./libft_curr/srcsextra/ft_swap.c) *			- swap value of two integers.
+* [`<ft_putchar>`](./libft_curr/srcsextra/ft_putchar.c) *	- output a character to stdout.
+* [`<ft_putchar_fd>`](./libft_curr/srcsextra/ft_putchar_fd.c)		- output a character to given file.
+* [`<ft_putstr>`](./libft_curr/srcsextra/ft_putstr.c) *		- output string to stdout.
+* [`<ft_putstr_fd>`](./libft_curr/srcsextra/ft_putstr_fd.c)		- output string to given file.
+* [`<ft_putendl>`](./libft_curr/srcsextra/ft_putendl.c) *	- output string to stdout with newline.
+* [`<ft_putendl_fd>`](./libft_curr/srcsextra/ft_putendl_fd.c)		- output string to given file with newline.
+* [`<ft_putnbr>`](./libft_curr/srcsextra/ft_putnbr.c) *		- output integer to stdout.
+* [`<ft_putnbr_fd>`](./libft_curr/srcsextra/ft_putnbr_fd.c)		- output integer to given file.
+* [`<ft_itoa>`](./libft_curr/srcsextra/ft_itoa.c)					- convert integer to ASCII string.
+* [`<ft_substr>`](./libft_curr/srcsextra/ft_substr.c)				- extract substring from string.
+* [`<ft_strtrim>`](./libft_curr/srcsextra/ft_strtrim.c)			- trim beginning and end of string with the specified characters.
+* [`<ft_strjoin>`](./libft_curr/srcsextra/ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
+* [`<ft_split>`](./libft_curr/srcsextra/ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
+* [`<ft_split_free>`](./libft_curr/srcsextra/ft_split_free.c) *				- free splitted string.
+* [`<ft_strmapi>`](./libft_curr/srcsextra/ft_strmapi.c)			- create new string from modifying string with specified function.
 
 ### Linked list functions
 
-* [`<ft_lstnew>`](./srcs/lst/ft_lstnew.c)				- create new list.
-* [`<ft_lstsize>`](./srcs/lst/ft_lstsize.c)			- count elements of a list.
-* [`<ft_lstlast>`](./srcs/lst/ft_lstlast.c)			- find last element of list.
-* [`<ft_lstadd_back>`](./srcs/lst/ft_lstadd_back.c)	- add new element at end of list.
-* [`<ft_lstadd_front>`](./srcs/lst/ft_lstadd_front.c)	- add new element at beginning of list.
-* [`<ft_lstdelone>`](./srcs/lst/ft_lstdelone.c)		- delete element from list.
-* [`<ft_lstclear>`](./srcs/lst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
-* [`<ft_lstiter>`](./srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
-* [`<ft_lstmap>`](./srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
+* [`<ft_lstnew>`](./libft_curr/srcslst/ft_lstnew.c)				- create new list.
+* [`<ft_lstsize>`](./libft_curr/srcslst/ft_lstsize.c)			- count elements of a list.
+* [`<ft_lstlast>`](./libft_curr/srcslst/ft_lstlast.c)			- find last element of list.
+* [`<ft_lstadd_back>`](./libft_curr/srcslst/ft_lstadd_back.c)	- add new element at end of list.
+* [`<ft_lstadd_front>`](./libft_curr/srcslst/ft_lstadd_front.c)	- add new element at beginning of list.
+* [`<ft_lstdelone>`](./libft_curr/srcslst/ft_lstdelone.c)		- delete element from list.
+* [`<ft_lstclear>`](./libft_curr/srcslst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
+* [`<ft_lstiter>`](./libft_curr/srcslst/ft_lstiter.c)			- apply function to content of all list's elements.
+* [`<ft_lstmap>`](./libft_curr/srcslst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
 
 ### get_next_line and ft_printf
 
