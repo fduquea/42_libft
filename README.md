@@ -1,6 +1,6 @@
 # 📚 Libft [![fduque-a's 42 Libft Score](https://badge42.vercel.app/api/v2/cli4i2e8c001108jt19bvwefz/project/3063782)](https://github.com/JaeSeoKim/badge42)
 
-## Disclaimer: This is the current libft I use, with a lot of bonus functions (functions not mandatory by the project's subject). The bonus functions are marqued with "*" both in this README and in the libft.h file with a comment. Also, the subject requires you to add a bonus rule to compile the bonus function, but after being evaluated I deleted my bonus rule and added the bonus source files to the mandatory ones, which is wrong, DO NOT COPY PASTE IT. Use it at your own risk.
+## Warning: There is two libft libraries, the one from the project (libft folder), and the one I currently use (libft_curr folder), where some functions were modified and others added (like the ft_printf and get_next_line)The bonus functions are marqued with "*" both in this README and in the libft.h file with a comment. Use it at your own risk.
 
 ## Description
 
@@ -98,6 +98,11 @@ This project consists of coding basic C functions (see below), which are then co
 * [`<ft_lstclear>`](./srcs/lst/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
 * [`<ft_lstiter>`](./srcs/lst/ft_lstiter.c)			- apply function to content of all list's elements.
 * [`<ft_lstmap>`](./srcs/lst/ft_lstmap.c)				- apply function to content of all list's elements into new list.
+
+### get_next_line and ft_printf
+
+* [`<ft_printf>`](https://github.com/fduquea/42_ft_printf)
+* [`<get_next_line>`](https://github.com/fduquea/42_get_next_line)
 
 ## Makefile explained
 
