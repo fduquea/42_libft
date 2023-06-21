@@ -217,11 +217,11 @@ and, when compiling your code, add the required flags:
 
 ◦ Email: fduque-a@student.42porto.com
 
-# Might interest you!
+## Found any issues? Contact me! 📥
 
-### - Check my 42 common-core progress ↙️
+- Email: fduque-a@student.42porto.com
 
-[HERE](https://github.com/fduquea/42cursus)
+## Might interest you! :sparkles:
 
-### - My 42 intra profile ↙️
-[HERE](https://profile.intra.42.fr/users/fduque-a)
+- Check my [42 common-core progress](https://github.com/fduquea/42cursus) :chart_with_upwards_trend:
+- My [42 intra profile](https://profile.intra.42.fr/users/fduque-a) :bust_in_silhouette:
