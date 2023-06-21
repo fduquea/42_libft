@@ -213,10 +213,6 @@ and, when compiling your code, add the required flags:
 
 * [xicodomingues/francinette](https://github.com/xicodomingues/francinette)
 
-# Found any issue? Contact me! 📥
-
-◦ Email: fduque-a@student.42porto.com
-
 ## Found any issues? Contact me! 📥
 
 - Email: fduque-a@student.42porto.com
